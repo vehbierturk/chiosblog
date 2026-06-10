@@ -1,0 +1,87 @@
+# robots.txt — Mastiha & Stone (chiosblog)
+# https://mastihaandstone.com/robots.txt
+
+# -----------------------------------------------
+# Standard search engine crawlers — fully allowed
+# -----------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# -----------------------------------------------
+# AI / LLM training crawlers — blocked
+# These bots scrape content to train AI models.
+# Our original writing is NOT licensed for AI training.
+# -----------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+# OpenAI browsing (ChatGPT real-time search)
+User-agent: ChatGPT-User
+Disallow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+# Google AI (Gemini training)
+User-agent: Google-Extended
+Disallow: /
+
+# Meta AI (Llama training)
+User-agent: FacebookBot
+Disallow: /
+
+# Apple AI
+User-agent: Applebot-Extended
+Disallow: /
+
+# Common Crawl (used by many LLM training datasets)
+User-agent: CCBot
+Disallow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Disallow: /
+
+# Amazon Alexa / AI training
+User-agent: Amazonbot
+Disallow: /
+
+# Bytedance AI crawlers
+User-agent: Bytespider
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+
+# YouBot (You.com AI)
+User-agent: YouBot
+Disallow: /
+
+# Diffbot (AI content scraper)
+User-agent: Diffbot
+Disallow: /
+
+# iAsk.ai
+User-agent: iaskspider/2.0
+Disallow: /
+
+# -----------------------------------------------
+# Sitemaps
+# -----------------------------------------------
+Sitemap: https://mastihaandstone.com/sitemap.xml
