@@ -84,4 +84,4 @@ Disallow: /
 # -----------------------------------------------
 # Sitemaps
 # -----------------------------------------------
-Sitemap: https://mastihaandstone.com/sitemap.xml
+Sitemap: https://erturklines.com/sitemap.xml
