@@ -387,45 +387,24 @@ em { font-style: italic; }
   height: 220px;
   position: relative;
   overflow: hidden;
+}
+.card-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
 }
-.card:hover .card-image { transform: scale(1.03); }
+.card:hover .card-image img { transform: scale(1.03); }
 .card--large .card-image {
   height: 100%;
   min-height: 320px;
 }
 
-/* Card image backgrounds */
-.card-image--villages {
-  background-image: url('images/pyrgi.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.card-image--monastery {
-  background-image: url('images/rouketopolemos.jpg');
-  background-size: cover;
-  background-position: center top;
-}
-.card-image--beach {
-  background-image: url('images/mavra-volia.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.card-image--food {
-  background-image: url('images/mastic-food.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.card-image--town {
-  background-image: url('images/chora.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.card-image--grove {
-  background-image: url('images/mastic-grove.jpg');
-  background-size: cover;
-  background-position: center;
-}
+/* Card image position overrides */
+.card-image--monastery img { object-position: center top; }
 
 .card-tag {
   position: absolute;
